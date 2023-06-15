@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Attribute Styling */
+
+
+body {
+    background: linear-gradient( to bottom, hsl(214, 47%, 23%) , hsl(237, 49%, 15%));
+    color: #f8f4f4;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    height: 100vh;
+}
+
+.attribute {
+    text-align: center;
+    color: hsl(229, 25%, 31%);
+    font-style: italic;
+    font-size: smaller;
+}
+
+.game-title {
+    text-align: center;
+    padding-bottom: .5em;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: .5em 20px;
+    position: relative;
+}
+
+
+/* Header */
+.header {
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    background-color: #fff;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.header-right p {
+    color: hsl(229, 64%, 46%);
+    font-weight: 700;
+}
+
+.header-right .score {
+    color: hsl(229, 25%, 31%);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* Main Body with Images */
+
+.game-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.main-body {
+   margin: 3em auto;
+   background-image: url('images/bg-triangle.svg');
+   background-repeat: no-repeat;
+   position: relative;
+   width: 350px;
+   height: 300px;
+   background-position: center;
+   background-size: cover;
+}
+
+.image-box {
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.main-game-image {
+    height: 120px;
+    width: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.scissor-image {
+    background-image: linear-gradient(360deg , hsl(39, 89%, 49%) , hsl(40, 84%, 53%));
+    top: -3em;
+    right: 0;
+}
+
+.paper-image {
+    top: -3em;
+    background-image: linear-gradient(360deg , hsl(230, 89%, 62%) , hsl(230, 89%, 65%));
+}
+
+.rock-image {
+    bottom: 0px;
+    right: 0;
+    left: 50%; 
+    margin-left: -50px;
+    background-image: linear-gradient(360deg , hsl(349, 71%, 52%) , hsl(349, 70%, 56%));
+}
+
+.rules {
+    position: relative;
+}
+
+.btn, .play-btn {
+  
+    padding: 1em 2em;
+    background: transparent;
+    border:2px solid white;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn {
+    bottom: 1em;
+    position: absolute;
+}
+.restart-btn {
+    right: 0;
+}
+.rule-btn {
+    left: 0;
+}
+
+/* Modal */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .2);
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    color: hsl(229, 25%, 31%);
+    transition: .3s height ease-in;
+}
+
+.modal-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.close-btn {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em ;
+}
+
+/* Score Container */
+.score-container {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+    justify-content: space-between;
+}
+
+.score-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.score-board {
+    margin-top: 3px;
+    background: #fff;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    color: hsl(229, 25%, 31%);
+    display: grid;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.game-winner {
+    background-color: hsl(189, 59%, 53%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ @media (max-width: "700px") {
+    .game-winner {
+        padding: 5px;
+        font-size: 8px;
+    }
+ }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+    <main class="container">
+
+      <section class="game-container">
+        <header>
+          <h1 class="game-title">Rock || Paper || Scissor</h1>
+          <div class="header">
+           
+            <div class="header-container">
+                <div class="header-left">
+                  <button type="button" class="play-btn">Play</button>
+                </div>
+                <div class="header-right">
+                  <p>Timer</p>
+                  <h3 class="score"><span class="timer">10</span> Sec</h3>
+                </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Score Board -->
+
+        <div class="score-container">
+          <div class="comp-score-board">
+            <p class="score-title">
+              Computer 🖥️
+            </p>
+
+            <h2 class="computer-score score-board">0</h2>
+          </div>
+
+          <p class="message">Start Game ...</p>
+          <div class="huma-score">
+            <div class="human-score-board">
+              <p class="score-title">
+                User 👤
+              </p>
+  
+              <h2 class="human-score score-board">0</h2>
+
+            </div>
+          </div>
+        </div>
+        
+        <!-- Main game body -->
+
+        <div class="main-body">
+          <div class="main-game-image paper-image">
+            <div class="image-box">
+              <img data-choice ='Paper' src="images/icon-paper.svg" alt="paper" class="paper img">
+            </div>
+          </div>
+
+          <div class="main-game-image scissor-image">
+            <div class="image-box">
+              <img data-choice ='Scissor' src="images/icon-scissors.svg" alt="scissor" class="scissor img">
+            </div>
+          </div>
+          <div class="main-game-image rock-image">
+            <div class="image-box">
+              <img data-choice ='Rock' src="images/icon-rock.svg" alt="rock" class="rock img">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Modal Image -->
+      <section class="modal-container">
+        <div class="modal-box">
+          <div class="modal-header">
+            <h3>Rules</h3>
+            <i class="close-btn">&times;</i>
+          </div>
+          <img src="images/image-rules.svg" alt="Rules">
+        </div>
+      </section>
+      <section class="rules">
+        <button type="button" class="rule-btn btn">Rules</button>
+        <button type="button" class="restart-btn btn">Reset</button>
+      </section>
+
+      <p class="attribute"> Made with 💖 Love by Alema</p>
+
+    </main>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="index.js"></script>
+</body>
+</html>
